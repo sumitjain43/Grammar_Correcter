@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Auto Grammar Correct</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 10px;
+        width: 220px;
+      }
+      h1 {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+      label {
+        display: block;
+        margin-bottom: 6px;
+      }
+      small {
+        display: block;
+        margin-top: 8px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grammar Mode</h1>
+
+    <label>
+      <input type="radio" name="mode" value="off" />
+      Off
+    </label>
+
+    <label>
+      <input type="radio" name="mode" value="suggest" />
+      Suggest (confirm before apply)
+    </label>
+
+    <label>
+      <input type="radio" name="mode" value="auto" />
+      Auto (replace directly)
+    </label>
+
+    <small>Shortcut in chat box: <b>Alt + G</b></small>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
